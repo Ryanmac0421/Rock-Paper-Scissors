@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>RockPaperScissors</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    
+<script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyAYkqpxCMfZ0rIc_kaSPF-Wqf_pUArvKEM",
+        authDomain: "rock-paper-scissors-77a72.firebaseapp.com",
+        databaseURL: "https://rock-paper-scissors-77a72.firebaseio.com",
+        projectId: "rock-paper-scissors-77a72",
+        storageBucket: "",
+        messagingSenderId: "1081527256988"
+    };
+    firebase.initializeApp(config);
+    </script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  
+    
+
+    <!-- Latest compiled and minified JavaScript -->
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+</head>
+<body>
+    
+    <!-- This is where i put my header -->
+    <header id="title">
+        <h1 class="title">Rock Paper Scissors</h1>
+    </header>
+    <br><br>
+    <div class="nameInput">
+        <div class="weclomeText" style="display: none;"></div>
+        <form id="nameForm">
+            <input type="text" class="textBox1" placeholder="Name">
+            <input type="submit" class="nameSubmit">
+        </form>
+    </div>
+    <br><br><br><br>
+    
+    <!-- This is my main wrapper, holds all but the header -->
+    <div class="wrapper">
+        
+        <!-- This is where i can input my welcome player text    -->
+        
+        
+        <!-- This is the players turn area -->
+        <div class="nextTurn"></div>
+        
+        <!-- This is the 3 main boxes in the middle, holds the actual game -->
+        <div id="mainGame" class="container">
+            <div class="row">
+                <div class="col-sm-3 row1">
+                    <div class="waitingPLayer1">
+                        <h3>Waiting for player 1!</h3>
+                        <div class="playerChoices1"></div> 
+                    </div>
+                
+                </div>   
+                
+                <div class="col-sm-3 row1">
+                    <P></P>
+                </div>
+                
+                <div class="col-sm-3 row1">
+                    <div class="waitingPLayer2">
+                        <h3>Waiting for player 2!</h3>
+                        <div class="playerChoices2"></div> 
+                    </div>
+                </div>
+                
+            </div>  
+        </div>
+        <br>
+
+        <div id="gameBtns" class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="btns1">
+                            <button id ="rock1" value="Rock"> Rock </button>
+                            <button id ="rock1" value="Paper"> Paper </button>
+                            <button id ="rock1" value="Scissors"> Scissors </button>
+                        </div>
+                    
+                    </div>   
+
+                    <div class="col-lg-6">
+                        <div class="btns2">
+                            <button id ="rock2" value="Rock"> Rock </button>
+                            <button id ="rock2" value="Paper"> Paper </button>
+                            <button id ="rock2" value="Scissors"> Scissors </button>
+                        </div>
+                    </div>
+                    
+                </div>  
+        </div>    
+        
+        <br>
+        
+        <!-- This is where is will put the input chat window into my game -->
+        <div class="mainChat">
+            <div id="chatInput" class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="talkField">
+                        </div>
+                    </div>
+                </div>    
+                
+                <br>
+            <form class="submitTwo">    
+                <div id="textInput" class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <input class="writeField" type="text" placeholder="Trash Talk Here!">
+                        </div>
+                    </div>
+                    
+                    <br>
+                </div>
+                <div id="submitInput" class="container"></div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <input class="submission" type="submit" style="text-align:center"></input>         
+                    </div>
+                </div>
+            </form>       
+            </div>
+        </div>
+        
+        
+        
+        <!-- This is my footer -->
+        <!-- <footer>
+            <p>&copy; Rock-Paper-Scissors</p>
+            <address>
+                <a href="google.com">Contact me</a>
+            </address>
+        </footer> -->
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>        
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="logic.js"></script>
+</body>
+</html>
