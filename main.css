@@ -1,14 +1,26 @@
 body {
-    background: rgb(100, 146, 100);
+    background: black;
     width: 100%;
+    height: 100%;
+    background-image: url("Images/rockpaper.jpeg");
+    background-size: cover;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: rgb(142, 200, 192)
 }
-
+html {
+    height: 100%;
+  }
+  body {
+    min-height: 100%;
+  }
 #title {
     text-align: center;
     background-color: rgb(67, 114, 67);
     width: 90%;
     margin: auto;
     padding: 1px;
+    margin-top: 10px;
     
     
 }
@@ -17,16 +29,7 @@ h1 {
     font-size: 50px;
 }
 
-.row1 {
-    float: left;
-    border: 1px solid black;
-    padding: 40px;
-    margin-left: 40px;
-    text-align: center;
-    
-    
 
-}
 
 
 
@@ -51,7 +54,7 @@ h1 {
 
 .self {
     /* float: right; */
-    text-align: right;
+    text-align: left;
 
 }
 
@@ -60,23 +63,13 @@ h1 {
     width: 40%;
     background-color: white;
     text-align: center;
-    margin-right: 25px;
+    margin-right: -5px;
     
 }
-#mainGame {
-    text-align: center;
-    margin-left: 130px;
 
-}
 
-.row1 {
-    border: 1px solid black;
-     
-    
-    min-height: 200px;
-   
 
-}
+
 
 .submission {
     text-align: center;
@@ -102,20 +95,50 @@ button {
 
 h3 {
     font-size: 18px;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
 }
 
 
-
-.btns1 {
-    margin-left: 150px;
+.we{
+    text-align: center;
 }
 
-.btns2 {
-    margin-left: 230px;    
+.playerChoices2 {
+    color: white;
+    font-size: 25px;
+    background-color: rgb(100, 146, 100);
+    background-size: 10%;
 }
 
-p {
-    margin-bottom: 200px; 
-    /* margin-left: 120px; */
+.playerChoices1 {
+    color: white;
+    font-size: 25px;
+    background-color: rgb(100, 146, 100);
+    background-size: 10%;
+}
+
+.helloName {
+    font-size: 18px;
+    color: white;
+}
+
+.helloName2 {
+    font-size: 18px;
+    color: white;
+}
+
+.wins1, .loses1{
+    color: white;
+    margin-right: 30px;
+} 
+
+
+.wins2 {
+    color: white;
+
+}
+
+
+.loses2{
+    color: white;
 }
